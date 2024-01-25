@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.some-other-options img{
+    height: 32px;
+}
+
+.nav{
+    
+    position: sticky;
+    top:2vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+
+}
+
+.tesla-logo{
+    letter-spacing: .5rem;
+}
+
+.main-options{
+    display: flex;
+    gap: 2vw;
+}
+
+.some-other-options{
+    display: flex;
+    gap: 1vw;
+    
+}
+
+.background{
+    height: 100vh;
+    background-image: url("car-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 230vh ;
+    
+}
+
+.page-2{
+    height: 100vh;
+    background-image: url("car-8.jpg");
+    background-repeat: no-repeat;
+    background-size: 220vh ;
+}
+
+.page-3{
+    height: 100vh;
+    background-image: url("car-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 199vh ;
+}
+
+.car-details{
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: 'Exo', sans-serif;
+    font-weight: bold;
+    
+}   
