@@ -4,31 +4,124 @@
     box-sizing: border-box;
 }
 
-
-
-
 .some-other-options img{
     height: 32px;
 }
 
+
+.complete-nav{
+    position: sticky;
+    top: 0vh;
+    /* display: flex;
+    flex-direction: column; */
+    height: 0;
+    
+}
+
+
+
 .nav{
     
-    position: sticky;
-    top:2vh;
-    display: flex;
+    /* position: sticky;
+    top:0vh; */
+    position: relative;
+    color: aliceblue;
+    background: linear-gradient(to right,rgba(14, 1, 14, 0.5),rgba(27, 5, 57, 0.5));
+    display: flex block;
     justify-content: space-between;
-    padding-top: 2vh;
-    margin-right: 1vw;
-    margin-left: 1vw;
+    padding: 2vh 2vw ;
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Exo', sans-serif;
+    transition: all 1.5s;
 
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.drop-down{
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+    padding-bottom:3vh ;
+    margin-bottom: 5vh;
+    /* display: none; */
+    background: linear-gradient(to right,rgba(14, 1, 14, 0.5),rgba(27, 5, 57, 0.5));
+    
+}
+
+.v-drop,.e-drop,.c-drop,.d-drop,.s-drop{
+    display: none;
+}
+
+
+hr{
+    transform: rotate("90deg");
+}
+
+.car-menu{
+    
+    padding-left: 30px;
+    display: grid;
+    width: 60vw;
+    grid-template-columns: repeat(4,1fr);
+}
+.car-menu img{
+    width: 150px;
+}
+
+
+
+.car-menu-options{
+    display: grid;
+    padding-left:50px;
+    padding-top: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.car-menu-options a{
+    font-size: 1rem;
+    color:black;
+    font-weight: bold;
+    list-style-type: none;
+    text-align: left;
+    
+}
+
+
 
 .tesla-logo{
     letter-spacing: .5rem;
+    height: 1vh ;
+    transition: all .5s ease; 
+    
 }
+
+.nav p , .some-other-options img{
+    transition: all .5s ease;
+}
+
+.tesla-logo:hover,.nav p:hover,.some-other-options img:hover{
+    transform: scale(1.2);
+    
+}
+
+.some-other-options img:hover{
+    background-color: rgba(30, 1, 77, 0.2);
+}
+
+.model-name{
+    font-size: 1rem;
+    padding-bottom:10px;
+}
+
+
+
 
 .main-options{
     display: flex;
@@ -43,9 +136,10 @@
 
 .background{
     height: 100vh;
+
     background-image: url("car-1.jpg");
     background-repeat: no-repeat;
-    background-size: 230vh ;
+    background-size: cover ;
     
 }
 
@@ -53,23 +147,164 @@
     height: 100vh;
     background-image: url("car-8.jpg");
     background-repeat: no-repeat;
-    background-size: 220vh ;
+    background-size: cover;
 }
 
 .page-3{
     height: 100vh;
     background-image: url("car-3.jpg");
     background-repeat: no-repeat;
-    background-size: 199vh ;
+    background-size: cover ;
 }
 
 .car-details{
-    height: 70vh;
+    padding-top: 30vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     font-size: 2.5rem;
     font-family: 'Exo', sans-serif;
     font-weight: bold;
     
+}
+
+
+.white{
+    color: white;
+}
+
+.red{
+    color: red;
+}
+
+.v-drop a{
+    color: black;
+}
+
+.v-drop a:hover{
+    color:rgb(233, 239, 229);
+}
+
+.v-drop img:hover,.v-drop p:hover{
+    transform: scale(1.2);
+    
 }   
+
+
+.energy-options img{
+    width: 200px;
+}
+.energy-options{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+
+.equipment-name{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.energy-options-menu{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem;
+    
+}
+
+.energy-options-menu p{
+    color: black;
+    padding: 8px;
+    transition: all .5s;
+}
+
+
+
+.energy-options p,.energy-options img{
+    transition: all .5s;
+}
+
+.energy-options p:hover,.energy-options-menu p:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+.energy-options img:hover{
+    transform: scale(1.2);
+}
+
+.charging-options{
+    padding-left: 250px;
+    
+}
+
+.charging-options-items{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.discover-menu{
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    gap: 10%;
+    text-align: left;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.discover-items:first-child{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.discover-items{
+    transition: all .8s;
+}
+
+.discover-items:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+.discover-items:first-child:hover{
+    transform: scale(1);
+    color: black;
+}
+
+.shop-items img{
+    width: 200px;
+    transition: .8s;
+}
+
+.shop-items img:hover{
+    transform: scale(1.2);
+}
+
+.shop-menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top:30px;
+}
+
+.shop-items-text{
+    font-size: 1rem ;
+    color: black;
+    transition: all .8s;
+}
+
+.shop-items-text:hover{
+    transform: scale(1.2);
+    color: white;
+}
